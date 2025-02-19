@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://cdn-1.files.vc/files/iyl/3ee967ae6e333e28f54115dad270b511.ico">
+    <title>Online Tanpura</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-left: 2.5%;
+            padding-top: 1%;
+            padding-right: 2.5%;
+            padding-bottom: 1%
+        }
+        .dark-mode {
+            background-color: rgb(44, 44, 44);
+            color: white;
+        }
+
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: rgb(44, 44, 44);
+                color: white;
+            }
+        }
+    </style>
+    <script>
+        function enableDarkMode() {
+            document.body.classList.add("dark-mode");
+            document.body.classList.remove("light-mode");
+            localStorage.setItem("theme", "dark");
+        }
+
+        function enableLightMode() {
+            document.body.classList.add("light-mode");
+            document.body.classList.remove("dark-mode");
+            localStorage.setItem("theme", "light");
+        }
+
+        function checkTheme() {
+            var theme = localStorage.getItem("theme");
+            if (theme === "dark") {
+                enableDarkMode();
+            } else {
+                enableLightMode();
+            }
+        }
+
+        checkTheme();
+    </script>
+</head>
+<body>
+    <button onclick="enableDarkMode()">🌙</button>
+    <button onclick="enableLightMode()">☀️</button><br><br>
+    This is a website with Tanpura samples of every scale. <br><br>
+    A Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/8yg/3ca026dad8717e788732fff670bf8b3c.mp3">
+    </audio> <br><br>
+    A# Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/6o7/08b19c3c3239e220eeb1447a5de62cad.mp3">
+    </audio> <br><br>
+    B Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/2gh/802587d38f00e624e94bedc9cb1f11ee.mp3">
+    </audio> <br><br>
+    C Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/tty/4371130edf6e321cae8a3c4a4fa00217.mp3">
+    </audio> <br><br>
+    C# Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/7br/389e3c639308cd8881079fd5cdb7276f.mp3">
+    </audio> <br><br>
+    D Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/03p/7903c38d771200315008d08f9756b999.mp3">
+    </audio> <br><br>
+    D# Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/gl8/975e29849fc83a41c29cd92021f155a6.mp3">
+    </audio> <br><br>
+    E Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/xx0/9148e07a23a57dc7b61cce68449070b5.mp3">
+    </audio> <br><br>
+    F Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/qyr/86eae9e64474f96c5ba0e8a87c0ef2b1.mp3">
+    </audio> <br><br>
+    F# Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/dol/bd42de8c3302e645b4a3271d76aed427.mp3">
+    </audio> <br><br>
+    G Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/yr4/90ca98039f466f6ba653a361a68fffc9.mp3">
+    </audio> <br><br>
+    G# Scale: <br>
+    <audio controls loop>
+        <source src="https://cdn-1.files.vc/files/3cp/a327da91aefd52c85db40f52ca8b201f.mp3">
+    </audio> <br><br><br>
+    <b><a href="https://github.com/yurikodesu/tanpura-online">GitHub</a></b><br>
+    Courtesy of <a href="https://www.youtube.com/@delhitegurdeep">Delhite Gurdeep (YT)</a>
+</body>
+</html>
