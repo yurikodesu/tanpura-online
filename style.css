@@ -9,11 +9,33 @@ body {
 .dark-mode {
     background-color: rgb(24, 24, 37);
     color: white;
+    a:link {
+        color: #c7ceff;
+    }
+
+    a:visited {
+    color: #cbd2ff;
+    }
+
+    a:hover {
+        color: #8d8ead;
+    }
 }
 
 .light-mode {
     background-color: rgb(186, 194, 222);
     color: black;
+    a:link {
+        color: #1c1d22;
+    }
+    
+    a:visited {
+        color: #1c1d22;
+    }
+    
+    a:hover {
+        color: #4c4f62;
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,24 +43,17 @@ body {
         background-color: rgb(24, 24, 37);
         color: white;
     }
-}
+    a:link {
+        color: #c7ceff;
+    }
 
-/* unvisited link */
-a:link {
-    color: #cba6f7; /* Catppuccin Mocha Lavender */
-    font-weight: bold; /* Make link text bolder */
-}
+    a:visited {
+    color: #cbd2ff;
+    }
 
-/* visited link */
-a:visited {
-    color: #cba6f7; /* Catppuccin purple */
-    font-weight: bold; /* Make visited link text bolder */
-}
-
-/* mouse over link */
-a:hover {
-    color: #b4befe; /* Catppuccin pink */
-    font-weight: bold; /* Make hover link text bolder */
+    a:hover {
+        color: #8d8ead;
+    }
 }
 
 .bottom {
