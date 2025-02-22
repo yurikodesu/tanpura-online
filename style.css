@@ -20,6 +20,19 @@ body {
     a:hover {
         color: #8d8ead;
     }
+    button {
+        background-color: rgb(24, 24, 37);
+        color: white;
+        border: 1px solid rgb(108, 112, 134);
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgb(108, 112, 134);
+        color: black;
+    }
 }
 
 .light-mode {
@@ -35,6 +48,19 @@ body {
     
     a:hover {
         color: #4c4f62;
+    }
+    button {
+        background-color: rgb(186, 194, 222);
+        color: white;
+        border: 1px solid rgb(108, 112, 134);
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgb(108, 112, 134);
+        color: black;
     }
 }
 
@@ -54,6 +80,50 @@ body {
     a:hover {
         color: #8d8ead;
     }
+    button {
+        background-color: rgb(24, 24, 37);
+        color: white;
+        border: 1px solid rgb(108, 112, 134);
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgb(108, 112, 134);
+        color: black;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: rgb(186, 194, 222);
+        color: black;
+    }
+    a:link {
+        color: #1c1d22;
+    }
+    
+    a:visited {
+        color: #1c1d22;
+    }
+    
+    a:hover {
+        color: #4c4f62;
+    }
+    button {
+        background-color: rgb(186, 194, 222);
+        color: white;
+        border: 1px solid rgb(108, 112, 134);
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: rgb(108, 112, 134);
+        color: black;
+    }
 }
 
 .bottom {
@@ -61,19 +131,4 @@ body {
     bottom: 0;
     text-align: center;
     width: 100%;
-}
-
-/* Button styles */
-button {
-    background-color: rgb(24, 24, 37); /* Dark background color */
-    color: white; /* White text color */
-    border: 1px solid rgb(108, 112, 134); /* Border color */
-    padding: 10px 20px; /* Padding for the button */
-    font-size: 16px; /* Font size for the button text */
-    cursor: pointer; /* Change cursor to pointer on hover */
-}
-
-button:hover {
-    background-color: rgb(108, 112, 134); /* Change background color on hover */
-    color: black; /* Change text color on hover */
 }
