@@ -25,17 +25,20 @@ body {
 
 /* unvisited link */
 a:link {
-    color: rgb(108, 112, 134);
+    color: #cba6f7; /* Catppuccin Mocha Lavender */
+    font-weight: bold; /* Make link text bolder */
 }
 
 /* visited link */
 a:visited {
-    color: rgb(108, 112, 134);
+    color: #cba6f7; /* Catppuccin purple */
+    font-weight: bold; /* Make visited link text bolder */
 }
 
 /* mouse over link */
 a:hover {
-    color: pink;
+    color: #b4befe; /* Catppuccin pink */
+    font-weight: bold; /* Make hover link text bolder */
 }
 
 .bottom {
